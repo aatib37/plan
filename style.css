@@ -11,41 +11,41 @@ body {
 }
 
 img {
-    width: 8%;
     margin-left: 45px;
-    padding-top: 30px;
+    margin-top: 30px;
+    width: 150px;
     cursor: pointer;
 }
 
 .heding1 {
     text-align: center;
     margin-top: 50px;
-    font-size: 1.875rem;
+    font-size: 30px;
     line-height: 1.5;
 }
 
 .p3 {
-    font-size: 0.75rem;
+    font-size: 12px;
     color: #637381;
     font-weight: bold;
     margin-left: 50px;
 }
 
 .p {
-    font-size: 0.75rem;
+    font-size: 12px;
     color: #637381;
     font-weight: bold;
     text-align: center;
 }
 
 .p1 {
-    font-size: 0.75rem;
+    font-size: 12px;
     font-weight: bold;
     color: #00AB55;
 }
 
 .pop {
-    font-size: 0.75rem;
+    font-size: 12px;
     font-weight: 700;
     float: right;
     padding: 5px;
@@ -57,7 +57,7 @@ img {
 }
 
 .save {
-    margin-right: 11%;
+    margin-right: 162px;
 }
 
 .pera {
@@ -86,10 +86,9 @@ img {
     display: flex;
     flex-direction: row;
     column-gap: 25px;
-    position: relative;
-    left: 11%;
+    justify-content: center;
     margin-top: 30px;
-    height: 550px;
+    height: auto;
     text-align: center;
 }
 
@@ -251,82 +250,53 @@ input:checked+.slider:before {
 
 @media screen and (min-width:300px) and (max-width:599px) {
     * {
-        margin: 0%;
-        padding: 0%;
+        margin: 0px;
+        padding: 0px;
         box-sizing: border-box;
-    }
-    .contenar3 {
-        display: block;
     }
     .flex {
         display: flex;
         flex-direction: column;
-        row-gap: 20px;
-    }
-    .item1 {
-        max-width: max-content;
-    }
-    .item2 {
-        max-width: max-content;
-    }
-    .item3 {
-        max-width: max-content;
+        align-items: center;
+        margin-top: 25px;
+        row-gap: 15px;
     }
     .icon {
-        width: 20%;
+        width: 100px;
     }
     .heding1 {
         margin-top: 10px;
-        font-size: 1.5rem;
-        position: relative;
-        left: 6%;
+        font-size: 24px;
     }
     .pera {
-        text-align: center;
         margin: 5px;
-        position: relative;
-        left: 6%;
     }
     .save {
         margin-top: 10px;
+        margin-right: auto;
+        padding-right: 35px;
     }
 }
 
 @media screen and (min-width:600px) and (max-width:899px) {
-    .contenar3 {
-        display: block;
-    }
     .flex {
-        display: block;
-        margin-left: 15%;
-    }
-    .item1 {
-        max-width: max-content;
-    }
-    .item2 {
-        max-width: max-content;
-    }
-    .item3 {
-        max-width: max-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: calc(100% + 24px);
     }
     .save {
         margin-top: 10px;
+        margin-right: auto;
+        padding-right: 40px;
     }
 }
 
 @media screen and (min-width:900px) and (max-width:1100px) {
     .flex {
-        max-width: max-content;
-        margin-left: -45px;
-    }
-    .item1 {
-        width: 300px;
-    }
-    .item2 {
-        width: 300px;
-    }
-    .item3 {
-        width: 300px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
     }
     .save {
         margin-right: 10px;
